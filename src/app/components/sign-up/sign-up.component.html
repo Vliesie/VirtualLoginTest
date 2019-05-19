@@ -14,12 +14,10 @@
         <input type="email" class="formControl" placeholder="Email Address" #userEmail required>
       </div>
 
-      <div class="formGroup">
-        <input type="password" class="formControl" placeholder="Password" #userPwd required>
-      </div>
+
 
       <div class="formGroup">
-        <input type="button" class="btn btnPrimary" value="Sign Up" (click)="authService.SignUp(userEmail.value, userPwd.value)">
+        <input type="button" class="btn btnPrimary" value="Sign Up" (click)="authService.SignUp(userEmail.value)">
       </div>
 
       <div class="formGroup">
@@ -27,13 +25,7 @@
       </div>
 
       <!-- Continue with Google -->
-      <div class="formGroup">
-        <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
-          <i class="fab fa-google-plus-g"></i>
-          Continue with Google
-        </button>
-      </div>
-      
+
     </div>
 
     <div class="redirectToLogin">
